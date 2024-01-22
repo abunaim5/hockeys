@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9ac6ff3bbe.js" crossorigin="anonymous"></script>
     <!-- custom tailwind color -->
     <script>
         tailwind.config = {
@@ -73,6 +75,8 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-color-gray cursor-pointer text-2xl mr-6 hidden md:flex"></i>
                     <a
                         class="btn bg-color-orange border text-lg text-white font-bold hover:bg-transparent hover:text-color-black hover:border-color-orange">Get
                         Ticket</a>
@@ -81,37 +85,64 @@
         </nav>
         <!-- banner section start -->
         <section class="max-w-[73.125rem] mx-auto p-2 mt-14">
-            <div>
+            <div class="relative">
                 <div class="carousel w-full min-h-[200px] md:min-h-[355px] lg:min-h-[550px] rounded-xl">
-                    <div id="slide1" class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
-                      
-                      <div class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
-                        <a href="#slide4" class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❮</a> 
-                        <a href="#slide2" class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❯</a>
-                      </div>
-                    </div> 
-                    <div id="slide2" class="carousel-item relative w-full">
-                      <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a> 
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                      </div>
-                    </div> 
-                    <div id="slide3" class="carousel-item relative w-full">
-                      <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a> 
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                      </div>
-                    </div> 
-                    <div id="slide4" class="carousel-item relative w-full">
-                      <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a> 
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                      </div>
+                    <!-- first slider -->
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+
+                        <div
+                            class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
+                            <a href="#slide4"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❮</a>
+                            <a href="#slide2"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❯</a>
+                        </div>
                     </div>
-                  </div>
+                    <!-- second slider -->
+                    <div id="slide2"
+                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+
+                        <div
+                            class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
+                            <a href="#slide1"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❮</a>
+                            <a href="#slide3"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❯</a>
+                        </div>
+                    </div>
+                    <!-- third slider -->
+                    <div id="slide3"
+                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+
+                        <div
+                            class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
+                            <a href="#slide2"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❮</a>
+                            <a href="#slide4"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❯</a>
+                        </div>
+                    </div>
+                    <!-- fourth slider -->
+                    <div id="slide4"
+                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+
+                        <div
+                            class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
+                            <a href="#slide3"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❮</a>
+                            <a href="#slide1"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- banner card -->
+                <div
+                    class="md:absolute md:right-4 md:bottom-5 lg:right-8 lg:bottom-9 w-full md:max-w-sm lg:max-w-lg xl:max-w-xl bg-color-black rounded-xl p-4 lg:p-8 space-y-4 mt-1">
+                    <h3 class="text-white text-xl lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-gray-400 font-medium">Welcome to the heart of Hockey's, where we shine the spotlight
+                        on the true stars of the game the players who redefine excellence on the ice.</p>
+                </div>
             </div>
         </section>
     </header>
