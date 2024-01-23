@@ -522,7 +522,7 @@
             </div>
             <div class="py-8">
                 <div
-                    class="flex items-center justify-center flex-col lg:flex-row gap-10 p-8 border border-gray-200 rounded-xl">
+                    class="flex items-center justify-center flex-col lg:flex-row gap-5 lg:gap-10 p-2 md:p-4 lg:p-8 border border-gray-200 rounded-xl">
                     <div class="">
                         <img src="images/faq.png" alt="faq">
                     </div>
@@ -608,8 +608,8 @@
                     support. Feel free to communicate with our community.
                 </p>
             </div>
-            <div class="py-8 flex items-center justify-center flex-col lg:flex-row gap-6">
-                <div class="space-y-6 border border-gray-200 rounded-xl p-12">
+            <div class="py-8 flex lg:items-center justify-center flex-col lg:flex-row gap-6">
+                <div class="space-y-6 border border-gray-200 rounded-xl p-2 md:p-4 lg:p-12">
                     <div class="bg-[#bced6e26] p-8 rounded-xl">
                         <img src="images/phone.png" alt="">
                         <p class="text-color-gray mt-6 mb-1">Phone Number :</p>
@@ -628,16 +628,16 @@
                 </div>
                 <div class="flex-1">
                     <label class="form-control w-full grid grid-cols-2 gap-6">
-                        <!-- first input -->
-                        <div>
+                        <!-- first input name -->
+                        <div class="col-span-2 md:col-span-1">
                             <div class="label">
                                 <span class="label-text text-xl text-color-black font-bold">Your Name</span>
                             </div>
                             <input type="text" placeholder="Enter your full name"
-                                class=" outline-none w-full max-w-xs px-4 py-5 rounded-xl bg-[#13131804]" />
+                                class=" outline-none w-full px-4 py-5 rounded-xl bg-[#13131804]" />
                         </div>
-                        <!-- second input -->
-                        <div>
+                        <!-- second input email -->
+                        <div class="col-span-2 md:col-span-1">
                             <div class="label">
                                 <span class="label-text text-xl text-color-black font-bold">Your Email</span>
                             </div>
@@ -645,16 +645,16 @@
                                 class=" outline-none w-full px-4 py-5 rounded-xl bg-[#13131804]" />
 
                         </div>
-                        <!-- third input -->
-                        <div>
+                        <!-- third input subject -->
+                        <div class="col-span-2 md:col-span-1">
                             <div class="label">
                                 <span class="label-text text-xl text-color-black font-bold">Subject</span>
                             </div>
                             <input type="text" placeholder="Enter your subject"
                                 class="outline-none w-full px-4 py-5 rounded-xl bg-[#13131804]" />
                         </div>
-                        <!-- fourth input -->
-                        <div>
+                        <!-- fourth input phone -->
+                        <div class="col-span-2 md:col-span-1">
                             <div class="label">
                                 <span class="label-text text-xl text-color-black font-bold">Phone Number</span>
                             </div>
@@ -666,7 +666,8 @@
                             <div class="label">
                                 <span class="label-text text-xl text-color-black font-bold">Massage</span>
                             </div>
-                            <textarea class="h-24 outline-none w-full px-4 py-5 rounded-xl bg-[#13131804]"
+                            <textarea
+                                class="min-h-[320px] outline-none w-full px-4 py-5 rounded-xl bg-[#13131804] resize-y textarea-lg"
                                 placeholder="Write your message"></textarea>
                         </div>
                         <button class="text-white text-xl font-bold bg-color-orange py-4 rounded-xl col-span-2">Send
