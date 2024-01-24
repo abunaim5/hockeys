@@ -263,7 +263,22 @@
                 </div>
                 <!-- third program card -->
                 <div
-                    class="bg-[linear-gradient(90deg,#13131899,#13131800),url(images/professional.png)] bg-no-repeat bg-cover bg-center min-h-[450px] relative rounded-2xl col-span-1 lg:col-span-2">
+                    class="bg-[linear-gradient(90deg,#13131899,#13131800),url(images/professional.png)] bg-no-repeat bg-cover bg-center min-h-[450px] relative rounded-2xl col-span-1 lg:col-span-2 md:flex hidden">
+                    <div class="absolute top-[31%] md:top-[51%] left-[5%] md:left-[4%] lg:top-[52%] lg:left-[2%]">
+                        <h3 class="text-3xl text-white font-extrabold">Professional Program</h3>
+                        <p class="text-white font-medium my-4 max-w-[355px] md:max-w-[520px]">Benefit from the expertise
+                            of professionals
+                            who are committed to nurturing talent, instilling discipline, and fostering a love for the
+                            game.
+                        </p>
+                        <button
+                            class="btn bg-color-orange text-white text-lg font-semibold border border-color-orange hover:bg-transparent hover:border-color-orange">Register
+                            Now!</button>
+                    </div>
+                </div>
+                <!-- small device third program card -->
+                <div
+                    class="bg-[linear-gradient(90deg,#13131899,#13131800),url(images/professional-small.png)] bg-no-repeat bg-cover bg-center min-h-[450px] relative rounded-2xl col-span-1 lg:col-span-2 flex md:hidden">
                     <div class="absolute top-[31%] md:top-[51%] left-[5%] md:left-[4%] lg:top-[52%] lg:left-[2%]">
                         <h3 class="text-3xl text-white font-extrabold">Professional Program</h3>
                         <p class="text-white font-medium my-4 max-w-[355px] md:max-w-[520px]">Benefit from the expertise
@@ -689,36 +704,40 @@
             </div>
         </section>
     </main>
-    <footer class="footer container mx-auto p-10 bg-color-black text-white mt-1 md:mt-14">
-        <aside>
-            <h2>Get In Touch</h2>
-            <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
-            <span><i class="fa-solid fa-envelope"></i> hockeys@support.com</span>
-            <span><i class="fa-solid fa-phone"></i> (+62) 123-321-543</span>
-        </aside>
-        <nav>
-            <header class="footer-title">Company</header>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Leadership</a>
-            <a class="link link-hover">Careers</a>
-            <a class="link link-hover">News & Article</a>
-            <a class="link link-hover">Legal Notice</a>
-        </nav>
-        <nav>
-            <header class="footer-title">Support</header>
-            <a class="link link-hover">Help Center</a>
-            <a class="link link-hover">FAQ</a>
-            <a class="link link-hover">Ticket Support</a>
-            <a class="link link-hover">Contact Us</a>
-        </nav>
-        <nav>
-            <header class="footer-title">Services</header>
-            <a class="link link-hover">Academy</a>
-            <a class="link link-hover">Group Lesson</a>
-            <a class="link link-hover">Private Lesson</a>
-            <a class="link link-hover">Hockeys for kids</a>
-            <a class="link link-hover">Hockeys for Adult</a>
-        </nav>
+    <!-- footer section start -->
+    <footer class="p-10 bg-color-black text-[#ffffff99] mt-1 md:mt-14">
+        <section class="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-9 max-w-[73.125rem] mx-auto p-2  ">
+            <aside class="flex flex-col gap-1 col-span-4 md:col-span-1 text-center md:text-start">
+                <h2 class=" text-3xl text-white font-extrabold mb-2">Hockey<span class="text-color-orange">’</span>s
+                </h2>
+                <p>Have a question, feedback, or just <br> want to say hello?</p>
+                <span class=""><i class="fa-solid fa-envelope text-color-orange"></i> hockeys@support.com</span>
+                <span><i class="fa-solid fa-phone text-color-orange"></i> (+62) 123-321-543</span>
+            </aside>
+            <nav class="flex flex-col gap-1 col-span-2 md:col-span-1 text-center md:text-start">
+                <header class="mb-2 text-xl font-bold text-white">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+            <nav class="flex flex-col gap-1 col-span-2 md:col-span-1 text-center md:text-start">
+                <header class="mb-2 text-xl font-bold text-white">Support</header>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <nav class="flex flex-col gap-1 col-span-4 md:col-span-1 text-center md:text-start">
+                <header class="mb-2 text-xl font-bold text-white">Services</header>
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lesson</a>
+                <a class="link link-hover">Private Lesson</a>
+                <a class="link link-hover">Hockeys for kids</a>
+                <a class="link link-hover">Hockeys for Adult</a>
+            </nav>
+        </section>
     </footer>
 </body>
 
