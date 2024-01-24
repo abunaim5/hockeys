@@ -54,7 +54,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
                             <li class="text-color-orange"><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -62,11 +62,11 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <h2 class=" text-3xl text-color-black font-extrabold">Hockey<span
+                    <h2 class="text-2xl md:text-4xl text-color-black font-extrabold">Hockey<span
                             class="text-color-orange">’</span>s</h2>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-color-gray">
+                    <ul class="menu menu-horizontal px-1 text-base text-color-gray">
                         <li class="text-color-orange font-bold"><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
@@ -78,7 +78,7 @@
                     <i
                         class="fa-solid fa-magnifying-glass text-color-gray cursor-pointer text-2xl mr-6 hidden md:flex"></i>
                     <a
-                        class="btn bg-color-orange border text-lg text-white font-bold hover:bg-transparent hover:text-color-black hover:border-color-orange">Get
+                        class="btn bg-color-orange border text-base md:text-lg text-white font-bold hover:bg-transparent hover:text-color-black hover:border-color-orange">Get
                         Ticket</a>
                 </div>
             </div>
@@ -86,10 +86,22 @@
         <!-- banner section start -->
         <section class="max-w-[73.125rem] mx-auto p-2 mt-1 md:mt-14">
             <div class="relative">
-                <div class="carousel w-full min-h-[180px] md:min-h-[355px] lg:min-h-[550px] rounded-xl">
-                    <!-- first slider -->
+                <div class="carousel w-full min-h-[250px] md:min-h-[355px] lg:min-h-[550px] rounded-xl">
+                    <!-- banner first slider -->
                     <div id="slide1"
-                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-center bg-cover lg:bg-center bg-no-repeat hidden md:flex">
+
+                        <div
+                            class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
+                            <a href="#slide4"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❮</a>
+                            <a href="#slide2"
+                                class="btn btn-circle bg-color-black text-white border-2 border-color-black hover:bg-transparent hover:text-color-black hover:border-color-orange">❯</a>
+                        </div>
+                    </div>
+                    <!-- banner first slider for small device -->
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-[url(images/banner-small.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat flex md:hidden">
 
                         <div
                             class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
@@ -101,7 +113,7 @@
                     </div>
                     <!-- second slider -->
                     <div id="slide2"
-                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+                        class="carousel-item relative w-full bg-[url(images/slide2.jpg)] bg-center bg-cover bg-no-repeat">
 
                         <div
                             class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
@@ -113,7 +125,7 @@
                     </div>
                     <!-- third slider -->
                     <div id="slide3"
-                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+                        class="carousel-item relative w-full bg-[url(images/slide3.jpg)] lg:bg-cover bg-center bg-no-repeat">
 
                         <div
                             class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
@@ -125,7 +137,7 @@
                     </div>
                     <!-- fourth slider -->
                     <div id="slide4"
-                        class="carousel-item relative w-full bg-[url(images/banner.png)] bg-contain bg-center lg:bg-cover lg:bg-center bg-no-repeat">
+                        class="carousel-item relative w-full bg-[url(images/slide4.jpg)] bg-center bg-cover lg:bg-center bg-no-repeat">
 
                         <div
                             class="absolute flex justify-center md:justify-start gap-3 transform -translate-y-1/2 left-5 right-5 top-[70%] md:top-[85%] lg:top-[90%]">
@@ -151,7 +163,7 @@
         <section class="max-w-[73.125rem] mx-auto p-2 mt-1 md:mt-14 divide-y-2 divide-dashed">
             <div></div>
             <div class="text-center space-y-6 py-8">
-                <h3 class="text-4xl text-color-black font-extrabold">Professional Hockeys Club</h3>
+                <h3 class="text-2xl md:text-4xl text-color-black font-extrabold">Professional Hockeys Club</h3>
                 <p class="text-color-gray font-medium max-w-xl mx-auto">Immerse yourself in the vibrant world of hockey
                     clubs through our Club Spotlights. Explore the history, traditions, and triumphs that define these
                     institutions.</p>
@@ -226,7 +238,7 @@
         <!-- program section start -->
         <section class="max-w-[73.125rem] mx-auto p-2 divide-y-2 divide-dashed">
             <div class="text-center space-y-6 py-8">
-                <h3 class="text-4xl text-color-black font-extrabold">Program Sections</h3>
+                <h3 class="text-2xl md:text-4xl text-color-black font-extrabold">Program Sections</h3>
                 <p class="text-color-gray font-medium max-w-xl mx-auto">Our Programs section is a curated collection of
                     transformative experiences designed to ignite your enthusiasm, refine your skills, and propel you
                     towards greatness. </p>
@@ -236,7 +248,7 @@
                 <div
                     class="bg-[linear-gradient(90deg,#13131899,#13131800),url(images/junior.png)] bg-no-repeat bg-cover bg-center min-h-[342px] relative rounded-2xl">
                     <div class="absolute top-[28%] md:top-[44%] left-[5%] md:left-[4%]">
-                        <h3 class="text-3xl text-white font-extrabold">Junior Program</h3>
+                        <h3 class="text-2xl md:text-3xl text-white font-extrabold">Junior Program</h3>
                         <p class="text-white font-medium my-4 max-w-[355px] md:max-w-[500px]">Invest in the future with
                             our youth
                             development programs.
@@ -251,7 +263,7 @@
                 <div
                     class="bg-[linear-gradient(90deg,#13131899,#13131800),url(images/teenager.png)] bg-no-repeat bg-cover bg-center min-h-[342px] relative rounded-2xl">
                     <div class="absolute top-[28%] md:top-[44%] md:left-[4%] left-[5%]">
-                        <h3 class="text-3xl text-white font-extrabold">Teenager Program</h3>
+                        <h3 class="text-2xl md:text-3xl text-white font-extrabold">Teenager Program</h3>
                         <p class="text-white font-medium my-4 max-w-[355px] md:max-w-[500px]">Focus on skill-building,
                             character
                             development, and creating a positive, supportive community for teenager athletes.
@@ -265,7 +277,7 @@
                 <div
                     class="bg-[linear-gradient(90deg,#13131899,#13131800),url(images/professional.png)] bg-no-repeat bg-cover bg-center min-h-[450px] relative rounded-2xl col-span-1 lg:col-span-2 md:flex hidden">
                     <div class="absolute top-[31%] md:top-[51%] left-[5%] md:left-[4%] lg:top-[52%] lg:left-[2%]">
-                        <h3 class="text-3xl text-white font-extrabold">Professional Program</h3>
+                        <h3 class="text-2xl md:text-3xl text-white font-extrabold">Professional Program</h3>
                         <p class="text-white font-medium my-4 max-w-[355px] md:max-w-[520px]">Benefit from the expertise
                             of professionals
                             who are committed to nurturing talent, instilling discipline, and fostering a love for the
@@ -280,7 +292,7 @@
                 <div
                     class="bg-[linear-gradient(90deg,#13131899,#13131800),url(images/professional-small.png)] bg-no-repeat bg-cover bg-center min-h-[450px] relative rounded-2xl col-span-1 lg:col-span-2 flex md:hidden">
                     <div class="absolute top-[31%] md:top-[51%] left-[5%] md:left-[4%] lg:top-[52%] lg:left-[2%]">
-                        <h3 class="text-3xl text-white font-extrabold">Professional Program</h3>
+                        <h3 class="text-2xl md:text-3xl text-white font-extrabold">Professional Program</h3>
                         <p class="text-white font-medium my-4 max-w-[355px] md:max-w-[520px]">Benefit from the expertise
                             of professionals
                             who are committed to nurturing talent, instilling discipline, and fostering a love for the
@@ -297,7 +309,7 @@
         <section class="max-w-[73.125rem] mx-auto p-2 mt-1 md:mt-14 divide-y-2 divide-dashed">
             <div></div>
             <div class="text-center space-y-6 py-8">
-                <h3 class="text-4xl text-color-black font-extrabold">Our New Products</h3>
+                <h3 class="text-2xl md:text-4xl text-color-black font-extrabold">Our New Products</h3>
                 <p class="text-color-gray font-medium max-w-xl mx-auto"> Experience the latest in hockey's gear
                     innovation with each Product, incorporating cutting edge technology to enhance your play on the ice.
                 </p>
@@ -307,13 +319,15 @@
                 <!-- first card -->
                 <div class="border border-gray-200 rounded-xl">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-5 px-6 py-6">
-                        <div class="">
+                        <div class="w-full min-h-[250px] md:w-[180px] md:min-h-[172px]">
+                            <!-- medium and large device image -->
                             <div
-                                class="bg-[url(images/jacket.png)] min-w-[180px] min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
+                                class="bg-[url(images/jacket.png)] md:min-w-[180px] md:min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
 
                             </div>
+                            <!-- small device image -->
                             <div
-                                class="bg-[url(images/small-jacket.png)] min-w-[287px] min-h-[172px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
+                                class="bg-[url(images/small-jacket.png)] w-full min-h-[250px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
 
                             </div>
                         </div>
@@ -345,13 +359,14 @@
                 <!-- second card -->
                 <div class="border border-gray-200 rounded-xl">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-5 px-6 py-6">
-                        <div class="">
+                        <div class="w-full min-h-[250px] md:w-[180px] md:min-h-[172px]">
                             <div
-                                class="bg-[url(images/eagle.png)] min-w-[180px] min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
+                                class="bg-[url(images/eagle.png)] md:min-w-[180px] md:min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
 
                             </div>
+                            <!-- small device image -->
                             <div
-                                class="bg-[url(images/small-eagle.png)] min-w-[287px] min-h-[172px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
+                                class="bg-[url(images/small-eagle.png)] w-full min-h-[250px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
 
                             </div>
                         </div>
@@ -381,13 +396,14 @@
                 <!-- third card -->
                 <div class="border border-gray-200 rounded-xl">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-5 px-6 py-6">
-                        <div class="">
+                        <div class="w-full min-h-[250px] md:w-[180px] md:min-h-[172px]">
                             <div
-                                class="bg-[url(images/cap.png)] min-w-[180px] min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
+                                class="bg-[url(images/cap.png)] md:min-w-[180px] md:min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
 
                             </div>
+                            <!-- small device image -->
                             <div
-                                class="bg-[url(images/small-cap.png)] min-w-[287px] min-h-[172px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
+                                class="bg-[url(images/small-cap.png)] w-full min-h-[250px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
 
                             </div>
                         </div>
@@ -417,13 +433,14 @@
                 <!-- fourth card -->
                 <div class="border border-gray-200 rounded-xl">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-5 px-6 py-6">
-                        <div class="">
+                        <div class="w-full min-h-[250px] md:w-[180px] md:min-h-[172px]">
                             <div
-                                class="bg-[url(images/jersey.png)] min-w-[180px] min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
+                                class="bg-[url(images/jersey.png)] md:min-w-[180px] md:min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
 
                             </div>
+                            <!-- small device image -->
                             <div
-                                class="bg-[url(images/small-jersey.png)] min-w-[287px] min-h-[172px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
+                                class="bg-[url(images/small-jersey.png)] w-full min-h-[250px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
 
                             </div>
                         </div>
@@ -454,13 +471,14 @@
                 <!-- fifth card -->
                 <div class="border border-gray-200 rounded-xl">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-5 px-6 py-6">
-                        <div class="">
+                        <div class="w-full min-h-[250px] md:w-[180px] md:min-h-[172px]">
                             <div
-                                class="bg-[url(images/helmet.png)] min-w-[180px] min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
+                                class="bg-[url(images/helmet.png)] md:min-w-[180px] md:min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
 
                             </div>
+                            <!-- small device image -->
                             <div
-                                class="bg-[url(images/small-helmet.png)] min-w-[287px] min-h-[172px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
+                                class="bg-[url(images/small-helmet.png)] w-full min-h-[250px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
 
                             </div>
                         </div>
@@ -491,13 +509,14 @@
                 <!-- sixth card -->
                 <div class="border border-gray-200 rounded-xl">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-5 px-6 py-6">
-                        <div class="">
+                        <div class="w-full min-h-[250px] md:w-[180px] md:min-h-[172px]">
                             <div
-                                class="bg-[url(images/ball.png)] min-w-[180px] min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
+                                class="bg-[url(images/ball.png)] md:min-w-[180px] md:min-h-[172px] bg-no-repeat bg-center bg-contain hidden md:flex">
 
                             </div>
+                            <!-- small device image -->
                             <div
-                                class="bg-[url(images/small-ball.png)] min-w-[287px] min-h-[172px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
+                                class="bg-[url(images/small-ball.png)] w-full min-h-[250px] bg-no-repeat bg-center bg-cover flex md:hidden rounded-xl">
 
                             </div>
                         </div>
@@ -530,7 +549,7 @@
         <section class="max-w-[73.125rem] mx-auto p-2 mt-1 md:mt-14 divide-y-2 divide-dashed ">
             <div></div>
             <div class="text-center space-y-6 py-8">
-                <h3 class="text-4xl text-color-black font-extrabold">Clients Question</h3>
+                <h3 class="text-2xl md:text-4xl text-color-black font-extrabold">Clients Question</h3>
                 <p class="text-color-gray font-medium max-w-xl mx-auto">Explore our FAQ section to find quick answers to
                     common queries about our hockey products and services.
                 </p>
@@ -618,7 +637,7 @@
         <section class="max-w-[73.125rem] mx-auto p-2 mt-1 md:mt-14 divide-y-2 divide-dashed ">
             <div></div>
             <div class="text-center space-y-6 py-8">
-                <h3 class="text-4xl text-color-black font-extrabold">Get In Touch</h3>
+                <h3 class="text-2xl md:text-4xl text-color-black font-extrabold">Get In Touch</h3>
                 <p class="text-color-gray font-medium max-w-xl mx-auto">To reach out for inquiries, collaboration, or
                     support. Feel free to communicate with our community.
                 </p>
@@ -708,7 +727,8 @@
     <footer class="p-10 bg-color-black text-[#ffffff99] mt-1 md:mt-14">
         <section class="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-9 max-w-[73.125rem] mx-auto p-2  ">
             <aside class="flex flex-col gap-1 col-span-4 md:col-span-1 text-center md:text-start">
-                <h2 class=" text-3xl text-white font-extrabold mb-2">Hockey<span class="text-color-orange">’</span>s
+                <h2 class="text-2xl md:text-4xl text-white font-extrabold mb-2">Hockey<span
+                        class="text-color-orange">’</span>s
                 </h2>
                 <p>Have a question, feedback, or just <br> want to say hello?</p>
                 <span class=""><i class="fa-solid fa-envelope text-color-orange"></i> hockeys@support.com</span>
